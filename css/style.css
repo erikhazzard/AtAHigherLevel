@@ -365,6 +365,7 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+  z-index: 100;
 }
 #nav .block {
   z-index: 2;
@@ -404,7 +405,9 @@ body {
 }
 
 #top {
+    color: #ffffff;
   padding: 1.5em 1.25em;
+  text-shadow: 0 0 1px #000000, 0 0 7px #000000, 0 0 20px rgba(0,0,0,0.1);
 }
 #top .block-title {
   margin: 70px auto 0;
@@ -415,6 +418,8 @@ body {
   border-bottom: 7px solid;
   width: 920px;
   padding-bottom: 15px;
+  position: relative;
+  z-index: 100;
 }
 #top .block-tagline {
   margin: 0 auto;
@@ -424,6 +429,8 @@ body {
   white-space: nowrap;
   width: 800px;
   padding-top: 15px;
+  position: relative;
+  z-index: 100;
 }
 #top .nav-btn {
   position: absolute;
@@ -653,9 +660,10 @@ footer[role="contentinfo"] {
   padding: 30px;
 }
 header {
-  background: url('../img/fantasyMap2.jpg') no-repeat;
+  background: url('../img/header-map.png') no-repeat;
   background-size: cover;
   height: 400px;
+  position: relative;
 }
 .about-wrapper,
 .connect-wrapper {
@@ -669,6 +677,20 @@ header {
 }
 .connect-wrapper {
   padding-top: 4.625em;
+  text-align: center;
+}
+.connect-wrapper iframe {
+    display: inline-block;
+}
+
+#header-blocker {
+    background: rgba(0,0,0,0.2);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
 }
 
 /********************************************

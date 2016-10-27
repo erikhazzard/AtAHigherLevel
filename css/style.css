@@ -1,11 +1,6 @@
 @charset "UTF-8";
-@-ms-viewport {
-  width: device-width;
-}
-
-@viewport {
-  width: device-width;
-}
+@-ms-viewport { width: device-width; }
+@viewport { width: device-width; }
 
 /* normalize.css v2.0.1 | MIT License | git.io/normalize */
 article,
@@ -236,13 +231,14 @@ body {
   line-height: 1.5em;
   margin-bottom: 1.5em;
 }
-.prose p {
+.prose p, #connect p {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.5em;
   margin-bottom: 18px;
 }
+#connect p { margin: auto auto 1.5em auto; }
 .prose p.small {
   color: #666;
   font-size: 0.8125em;
@@ -271,12 +267,17 @@ body {
 .prose h4 {
   border-bottom: 1px solid #222222;
 }
-.prose a {
+.prose a, 
+#connect p a {
   color: #f79620;
   text-decoration: none;
   outline: none;
 }
-.prose a:focus, .prose a:hover {
+.prose a:focus,
+.prose a:hover,
+#connect p a:focus,
+#connect p a:hover
+{
   color: #ffac46;
 }
 
@@ -651,20 +652,35 @@ footer[role="contentinfo"] {
 }
 
 /******************************************
-    ADDITIONAL STYLES via ALISEN
+ *
+    ADDITIONAL STYLES 
+
 ******************************************/
-.single-episode-wrapper {
-  background: #ffffff;
-  border: 1px solid #d7d7d7;
-  margin: 50px 0;
-  padding: 30px;
-}
 header {
   background: url('../img/header-map.png') no-repeat;
   background-size: cover;
   height: 400px;
   position: relative;
 }
+
+.single-episode-wrapper {
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  margin: 50px 0;
+  padding: 30px;
+}
+.episode-list-date {
+    color: #cdcdcd;
+}
+.episode-list-coming-soon {
+    color: #cdcdcd;
+    text-align: center;
+}
+.episode-list-more-link {
+    display: block;
+    text-align: center;
+}
+
 .about-wrapper,
 .connect-wrapper {
   background: url('../img/cartographer.png');
@@ -681,6 +697,11 @@ header {
 }
 .connect-wrapper iframe {
     display: inline-block;
+}
+.connect-wrapper h1 {
+    font-size: 3em;
+    margin: 0.4em auto;
+    display: table;
 }
 
 #header-blocker {
@@ -707,7 +728,9 @@ input[type="email"] {
   max-width: 350px;
   width: 100%;
 }
-.action-button{
+.action-button,
+#mc_embed_signup .button
+{
   background: #fff;
   transition: ease-in-out 0.15s;
   border: 2px solid #f79620;
@@ -721,6 +744,16 @@ input[type="email"] {
   color: #fff;
   transition: ease-in-out 0.15s;
 }
+
+#mc_embed_signup {
+    background: none;
+    width: auto;
+}
+#mce-success-response {
+    margin: 2em 0 0 0;
+    color: #343434;
+}
+
 @media screen and (max-width: 600px) {
   input[type="email"] {
     max-width: 90%;

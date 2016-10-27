@@ -23,7 +23,7 @@
     <nav id="nav" role="navigation">
         <ul>
             <li class="is-active">
-                <a href="episode.html">Episodes</a>
+                <a href="#episodes">Episodes</a>
             </li>
             <li>
                 <a href="#about">About</a>
@@ -40,63 +40,82 @@
 
     <header id="top" role="banner">
         <div id='header-blocker'></div>
-        <h1 class="block-title"><a href="index.html">At a Higher Level</a></h1>
+        <h1 class="block-title"><a href="/">At a High<span></span>er Level</a></h1>
         <h2 class="block-tagline">with Erik Hazzard</h2>
         <a class="nav-btn" id="nav-open-btn" href="#nav">Book Navigation</a>
     </header>
 
     <div id="main" role="main">
-        <article class="block prose">
+        <div id="episodes">
+            <article class="block prose">
+                <h4>Episodes</h4>
 
-            <h4>Episodes</h4>
+                <div class="single-episode-wrapper">
+                    <h2><a href="#">Episode 1: Flow</a></h2>
+                    <p class="episode-list-date">October 27th, 2015</p>
+                    <p>
+                        Flow. You've experienced it, but you might not know exactly what it is. In this episode, we'll discuss what this state is, the requirements to achieve it, and how it's relevant to players and game designers. We'll see how this claim holds up: "If you can get into flow, you can enjoy any game." 
+                    </p>
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289858989%3Fsecret_token%3Ds-WhUSx&amp;color=f59533&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                </div>
 
-            <div class="single-episode-wrapper">
-                <h2><a href="#">#1 At a Higher Level</a></h2>
-                <p>May 30, 2015</p>
-                <p>Welcome to the podcast! Today we're taking a contemplative look at in-app purchases and discuss two major schools of thought surrounding mobile games.</p>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289858989%3Fsecret_token%3Ds-WhUSx&amp;color=f59533&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-            </div>
-
-            <a href="episode.html"><div class="button action-button">All Episodes</div></a>
-        </article>
+                <a href="#episodes" class="episode-list-more-link"><div class="button action-button">All Episodes</div></a>
+            </article>
+        </div>
 
         <div id="about" class="about-wrapper">
-        <article class="block prose">
-            <h1>About</h1>
-            <p>
-                At a Higher Level is a podcast dedicated to all things related to video games and data viz, including books, interviews, and other <a href="#">awesome resources</a>.
-            </p>
-
-            <p>
-                Check out the show notes for each episode for links to other great content, and to find out more about the topics from that episode.
-            </p>
-
-            <p>
-                <a href="http://vasir.com">Erik Hazzard</a> is a video game designer, full-stack web developer, co-founder of <a href="http://five.com">Five.com</a>, data-viz enthusiast, bearded he-man, and awesome guy who loves to talk about and share his interests with others.
-            </p>
-        </article>
+            <article class="block prose">
+                <h1>About</h1>
+                <p>
+                    At a Higher Level is a game design podcast that takes an interdisciplinary approach to exploring games and the experiences they create.
+                </p>
+                <p>
+                    <a href="http://vasir.com" target="_blank">Erik Hazzard</a> is author, programmer, startup co-founder, map lover, data-viz enthusiast, and amateur game developer.
+                </p>
+            </article>
         </div>
 
         <article class="block prose">
-
             <div id="subscribe" class="subscribe-wrapper">
                 <h1>Subscribe</h1>
 
                 <h2>Get brand new episodes sent to your inbox.</h2>
 
-                <form>
+                <form action="//atahigherlevel.us14.list-manage.com/subscribe/post?u=746d51e23a50d2208fcb8feec&amp;id=eaa16ea5e4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div class="mc-field-group">
-                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address..."><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button action-button">
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address...">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button action-button">
                     </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_746d51e23a50d2208fcb8feec_eaa16ea5e4" tabindex="-1" value=""></div>
+                    <div class="clear"> </div>
                 </form>
+                <!-- Begin MailChimp Signup Form -->
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
+
+
             </div>
         </article>
 
         <div id="connect" class="connect-wrapper">
+            <h1>Connect</h1>
+            <p>
+                Questions, comments, criticisms? 
+                <br />
+                Follow 
+                <a href='https://twitter.com/atahigherlevel' target="_blank">@AtAHigherLevel</a> on twitter, or reach out to Erik personally at 
+                <a href='https://twitter.com/erikhazzard' target="_blank">@ErikHazzard</a>.
+                <br />
+                <br />
+            </p>
 
-            <a class="twitter-timeline" href="https://twitter.com/enoex" data-widget-id="603730041944571905">Tweets by @enoex</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+            <div>
+                <a class="twitter-timeline" data-width="800" data-height="320" data-link-color="#f79620" href="https://twitter.com/AtAHigherLevel">Tweets by AtAHigherLevel</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </div>
 
     </div>

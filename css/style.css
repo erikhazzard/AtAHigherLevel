@@ -196,11 +196,11 @@ ul, ol {
   list-style: none;
 }
 
-h1,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Cinzel Decorative', cursive;
 }
 
-h2 {
+h3 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
@@ -254,12 +254,13 @@ body {
 .prose p:last-child {
   margin-bottom: 0;
 }
-.prose h1 {
+.prose h2,
+#connect h2 {
   font-size: 3em;
   margin: 0.4em auto;
   display: table;
 }
-.prose h2 {
+.prose h3 {
   font-size: 2.5em;
   line-height: 1.25em;
   margin-bottom: 0.5em;
@@ -312,29 +313,6 @@ body {
   opacity: 1;
 }
 
-.nav-btn {
-  display: block;
-  width: 2.625em;
-  height: 2.25em;
-  padding: 0;
-  border: 0;
-  outline: none;
-  background: #252525 url("../img/nav-icon.svg") left center no-repeat;
-  background-size: 1.875em 1.5em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.no-svg .nav-btn {
-  background-image: url("../img/nav-icon.png");
-}
-.nav-btn:hover, .nav-btn:focus {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
 
 #outer-wrap {
   position: relative;
@@ -451,6 +429,13 @@ footer[role="contentinfo"] {
 }
 
 @media screen and (min-width: 45.0625em) {
+  #top {
+      font-size: 0.7em;
+      height: 300px;
+  }
+  #top .block-title {
+    width: 86%;
+  }
   #top .nav-btn {
     border: 0;
     clip: rect(0 0 0 0);
@@ -499,7 +484,8 @@ footer[role="contentinfo"] {
 }
 @media screen and (max-width: 45em) {
   #top {
-    font-size: .75em;
+    height: 200px;
+    font-size: .35em;
   }
   #top .block-title,
   #top .block-tagline {
@@ -663,12 +649,30 @@ header {
   position: relative;
 }
 
+#episodes h2,
+#episode-show-notes h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2.9em;
+  text-align: left;
+  margin: 0;
+}
+
 .single-episode-wrapper {
   background: #ffffff;
   border: 1px solid #d7d7d7;
   margin: 50px 0;
   padding: 30px;
 }
+.show-notes-link {
+    margin: 0.5em 0 0 0;
+    text-align: right;
+}
+.show-notes-link a {
+    font-weight: 500;
+    font-size: 0.8em;
+    letter-spacing: 0;
+}
+
 .episode-list-date {
     color: #cdcdcd;
 }

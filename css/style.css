@@ -220,6 +220,8 @@ body {
   min-width: 20em;
 }
 
+.clear { clear: both; }
+
 .highlight {
   background: #fff699;
   padding: 0 0.5em;

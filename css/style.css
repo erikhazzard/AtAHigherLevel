@@ -665,7 +665,12 @@ header {
 }
 .show-notes-link {
     margin: 0.5em 0 0 0;
-    text-align: right;
+    position: relative;
+    text-align: left;
+}
+.episode-list-tweet-wrapper {
+    position: absolute;
+    right: 0;
 }
 .show-notes-link a {
     font-weight: 500;

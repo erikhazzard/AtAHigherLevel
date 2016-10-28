@@ -394,7 +394,7 @@ body {
   line-height: 1.2em;
   text-align: center;
   white-space: nowrap;
-  border-bottom: 7px solid;
+  border-bottom: 3px solid;
   width: 920px;
   padding-bottom: 15px;
   position: relative;
@@ -790,4 +790,8 @@ input[type="email"] {
 }
 #main ul, #main ol {
     margin: auto auto auto 2em;
+}
+.block-tagline {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 2px;
 }
